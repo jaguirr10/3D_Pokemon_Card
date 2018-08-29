@@ -1,0 +1,104 @@
+/* Juan Aguirre */
+
+
+
+.container {-webkit-perspective: 1000px;  width: 245px; height: 342px; margin: 160px auto;}
+
+.card {
+
+  -webkit-transform-style: preserve-3d;
+
+  width: 245px; height: 342px;
+
+  position: relative;
+
+  -webkit-transform: rotateY(180deg);
+
+  -webkit-animation: spin 5s linear infinite;
+
+  background: #444;
+
+  border-radius: 10px;
+
+  
+
+}
+
+
+
+body {
+
+  background: #000; 
+
+}
+
+
+
+.face {
+
+  width: 245px; height: 342px;
+
+  
+
+  position: absolute;
+
+}
+
+.front {width: 245px; height: 342px; 
+
+box-shadow: 0px 0px 100px 10px white; }
+
+
+
+.back {
+
+  width: 245px; height: 342px;
+
+  
+
+ background:url('img1.jpg');
+
+  -webkit-transform: translateZ(-3px) rotateY(180deg);
+
+  background-size: cover;
+
+  border-radius: 11px;
+
+}
+
+
+
+
+
+.hit {
+
+  background: url('img2.png');
+
+  
+
+}
+
+
+
+
+
+@-webkit-keyframes spin {
+
+  0% {
+
+    -webkit-transform: rotateY(0deg)
+
+  }
+
+  
+
+  100% {
+
+    -webkit-transform: rotateY(360deg);
+
+  }
+
+}
+
+
+
